@@ -1,0 +1,5 @@
+package com.BlogApplication.start.payload;
+
+public class UserDto {
+
+}

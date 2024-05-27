@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LibraryManagemnetSystem/spark-lms-master&apos; to &apos;LibraryManagmentSystem&apos;" description="Rename resource &apos;spark-lms-master&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="spark-lms-master" name="LibraryManagmentSystem" stamp="1709110308469" updateReferences="true"/>
+</session>

@@ -1,0 +1,8 @@
+package com.BlogApplication.start.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.BlogApplication.start.Entities.User;
+
+public interface UserRepo extends JpaRepository<User, Long> {
+
+}

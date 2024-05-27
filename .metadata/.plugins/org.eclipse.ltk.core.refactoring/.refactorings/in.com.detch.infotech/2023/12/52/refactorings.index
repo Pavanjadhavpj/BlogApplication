@@ -1,0 +1,34 @@
+1703414339494	Delete element
+1703414370018	Move 'LoginView.jsp' to 'jsp'
+1703418328761	Delete element
+1703418333417	Delete element
+1703418339207	Delete element
+1703418354785	Delete element
+1703418375047	Delete element
+1703420188578	Copy compilation unit
+1703420192860	Delete element
+1703420375677	Rename resource 'LoginView.jsp'
+1703420474793	Rename resource 'Welcome.jsp'
+1703422204187	Rename resource 'LoginView.jsp'
+1703449278827	Delete element
+1703454797571	Delete element
+1703454803192	Delete element
+1703455470324	Encapsulate field 'id'
+1703455538062	Encapsulate field 'permissionLevel'
+1703455708066	Delete element
+1703455828811	Delete element
+1703456102371	Delete element
+1703524562457	Move 'AdminView.jsp' to 'webapp'
+1703524568306	Move 'DeleteuserView.jsp' to 'webapp'
+1703524569966	Move 'ReadUserInfoView.jsp' to 'webapp'
+1703524571693	Move 'RegisterView.jsp' to 'webapp'
+1703524573389	Move 'UpdateuserView.jsp' to 'webapp'
+1703524575047	Move 'UserView.jsp' to 'webapp'
+1703524576737	Move 'Welcome.jsp' to 'webapp'
+1703524698714	Move 'AdminView.jsp' to 'jsp'
+1703524701089	Move 'DeleteuserView.jsp' to 'jsp'
+1703524703543	Move 'ReadUserInfoView.jsp' to 'jsp'
+1703524705958	Move 'RegisterView.jsp' to 'jsp'
+1703524708297	Move 'UpdateuserView.jsp' to 'jsp'
+1703524710550	Move 'UserView.jsp' to 'jsp'
+1703524713206	Move 'Welcome.jsp' to 'jsp'

@@ -1,0 +1,95 @@
+package in.com.DenchTechnologies.bean;
+
+import java.util.Objects;
+
+public class Userbean extends BaseBean {
+
+	
+	private String name;
+	private String email;
+	private String password;
+	private String Conform_password;
+	private String City;
+	private int Number;
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getConform_password() {
+		return Conform_password;
+	}
+
+	public void setConform_password(String conform_password) {
+		Conform_password = conform_password;
+	}
+
+	public String getCity() {
+		return City;
+	}
+
+	public void setCity(String city) {
+		City = city;
+	}
+
+	public int getNumber() {
+		return Number;
+	}
+
+	public void setNumber(int number) {
+		Number = number;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(City, Conform_password, Number, email, name, password);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Userbean other = (Userbean) obj;
+		return Objects.equals(City, other.City) && Objects.equals(Conform_password, other.Conform_password)
+				&& Number == other.Number && Objects.equals(email, other.email) && Objects.equals(name, other.name)
+				&& Objects.equals(password, other.password);
+	}
+
+	@Override
+	public String getKey() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

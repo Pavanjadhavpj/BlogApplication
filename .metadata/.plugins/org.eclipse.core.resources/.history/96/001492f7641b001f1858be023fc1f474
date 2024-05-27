@@ -1,0 +1,5 @@
+package com.BlogApplication.start.Repository;
+
+public interface UserRepository {
+
+}

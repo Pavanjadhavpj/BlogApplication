@@ -1,0 +1,5 @@
+package com.BlogApplication.start.Service;
+
+public interface UserService {
+
+}
