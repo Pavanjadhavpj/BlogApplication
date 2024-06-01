@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -27,8 +28,10 @@ public class GlobalExceptionHandler {
 	{
 		Map<String,String> resp=new HashMap<>();
 		ex.getBindingResult().getAllErrors().forEach((error)->{
-			String fieldName =
+			String fieldName = ((FieldError)error).getField();
+			String message =error.getDefaultMessage();
+			resp.put(fieldName, message);
 		});
-		return null;
+		return new ResponseEntity<Map<String,String>>(resp,HttpStatus.BAD_REQUEST);
 	}
 }
