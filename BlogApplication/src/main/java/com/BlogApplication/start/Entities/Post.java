@@ -1,5 +1,7 @@
 package com.BlogApplication.start.Entities;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,9 +10,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 
 @Entity
 @Table(name = "posts")
+@Getter
+@Setter
+@NoArgsConstructor
 public final class Post {
 	
 	@Id 
@@ -22,7 +31,7 @@ public final class Post {
    private String content;
    	
    private String imageName;
-   private String addedDate;
+   private Date addedDate;
    
    @ManyToOne
    @JoinColumn(name = "category_id")
@@ -30,4 +39,5 @@ public final class Post {
    
    @ManyToOne
    private User user;
+  
 }
