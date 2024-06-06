@@ -8,17 +8,17 @@ import com.BlogApplication.start.payload.PostDto;
 public interface Postservice {
 	public PostDto createPost(PostDto postDto,Integer userId,Integer categoryId);
 	
-	public Post updatePost(PostDto postDto,Integer postId);
+	public PostDto updatePost(PostDto postDto,Integer postId);
 	
 	public void deletePost(Integer postId);
 	
-	public List<Post> getAllPost();
+	public List<PostDto> getAllPost();
 	
-	public Post getPostById(Integer postId);
+	public PostDto getPostById(Integer postId);
 	
-	public List<Post> getPostsByCategory(Integer categoryId);
+	public List<PostDto> getPostsByCategory(Integer categoryId);
 	
-	public List<Post>getPostsByUser(Integer userId);
+	public List<PostDto>getPostsByUser(Integer userId);
 	
-	public List<Post> searchPosts(String keyword);
+	public List<PostDto> searchPosts(String keyword);
 }

@@ -13,7 +13,7 @@ public class BlogApplication {
 	}
    
 	@Bean
-	public ModelMapper modelMapper()
+	static ModelMapper modelMapper()
 	{
 		return new ModelMapper();
 	}
