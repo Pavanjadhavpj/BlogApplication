@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.BlogApplication.start.Entities.Post;
@@ -67,5 +69,13 @@ public class PostController {
 	{   
 		PostDto postDto =this.postservice.getPostById(postId);
 		return ResponseEntity.ok(postDto);
+	}
+	
+	@PutMapping("/update/{postid}")
+	public ResponseEntity<PostDto> updatePost(@RequestBody PostDto postDto,@PathVariable Integer postId)
+	{  
+	    PostDto updatePost=this.postservice.updatePost(postDto, postId);
+		
+		return new ResponseEntity<PostDto>(updatePost,HttpStatus.OK);
 	}
 }
