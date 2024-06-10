@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.BlogApplication.start.Entities.Category;
 import com.BlogApplication.start.Entities.Post;
@@ -55,8 +56,8 @@ public class PostServiceImpl implements Postservice {
 
 	@Override
 	public void deletePost(Integer postId) {
-		// TODO Auto-generated method stub
-		
+	  Post post=this.postRepo.findById(postId).orElseThrow(()-> new ResourceNotFoundException("Post","post Id",postId));
+	  this.postRepo.delete(post);
 	}
 
 	@Override
